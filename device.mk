@@ -337,6 +337,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Enable for volte call
 AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 
+# WiFi Calling
+PRODUCT_PROPERTY_OVERRIDES += \
+   persist.data.iwlan.enable=true \
+   persist.radio.ignore_ims_wlan=1 \
+   persist.radio.data_con_rprt=1
+
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.hwui.texture_cache_size=72 \
    ro.hwui.layer_cache_size=48 \
