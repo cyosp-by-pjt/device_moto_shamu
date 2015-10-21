@@ -43,5 +43,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set cyosp version in build.props
 $(call inherit-product-if-exists, vendor/cyosp/config/common.mk)
 
+# Set cyosp version in build.props
+$(call inherit-product-if-exists, vendor/cyosp/config/common.mk)
+
 PRODUCT_PACKAGES += \
     Launcher3
