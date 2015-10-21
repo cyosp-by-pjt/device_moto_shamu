@@ -40,5 +40,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 	BUILD_FINGERPRINT=google/shamu/shamu:6.0/MRA58K/2256973:user/release-keys \
 	PRIVATE_BUILD_DESC="shamu-user 6.0 MRA58K 2256973 release-keys"
 
+# Set cyosp version in build.props
+$(call inherit-product-if-exists, vendor/cyosp/config/common.mk)
+
 PRODUCT_PACKAGES += \
     Launcher3
