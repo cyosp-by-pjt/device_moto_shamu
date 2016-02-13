@@ -35,11 +35,6 @@ $(call inherit-product-if-exists, vendor/motorola/shamu/device-vendor.mk)
 
 PRODUCT_NAME := aosp_shamu
 
-# Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += \
-	BUILD_FINGERPRINT="google/shamu/shamu:6.0.1/MMB29S/2489379:user/release-keys" \
-	PRIVATE_BUILD_DESC="shamu-user 6.0.1 MMB29S 2489379 release-keys"
-
 # Set cyosp version in build.props
 $(call inherit-product-if-exists, vendor/cyosp/config/common.mk)
 
