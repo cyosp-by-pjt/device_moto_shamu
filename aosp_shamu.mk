@@ -37,6 +37,7 @@ PRODUCT_NAME := aosp_shamu
 
 # Set cyosp version in build.props
 $(call inherit-product-if-exists, vendor/cyosp/config/common.mk)
+$(call inherit-product-if-exists, vendor/cyosp/config/shamu.mk)
 
 PRODUCT_PACKAGES += \
     Launcher3
